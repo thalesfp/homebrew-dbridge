@@ -5,21 +5,21 @@
 class Dbridge < Formula
   desc "Multi-database CLI and MCP server for AI agents"
   homepage "https://github.com/thalesfp/dbridge"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thalesfp/dbridge/releases/download/v0.7.0/dbridge_0.7.0_darwin_amd64.tar.gz"
-      sha256 "c4c2ab70fa0d16b6bb48f4cde9bad4260596fb85b2236602e59ba2695e00dfa2"
+      url "https://github.com/thalesfp/dbridge/releases/download/v0.8.0/dbridge_0.8.0_darwin_amd64.tar.gz"
+      sha256 "6e9472df38cf62ec35653caff5add961bb615e83a4e7b5244c256818c8f46f67"
 
       define_method(:install) do
         bin.install "dbridge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thalesfp/dbridge/releases/download/v0.7.0/dbridge_0.7.0_darwin_arm64.tar.gz"
-      sha256 "c23777a885102f8d7cb680763862768b8352d8cb79d10d037070eae99e282e24"
+      url "https://github.com/thalesfp/dbridge/releases/download/v0.8.0/dbridge_0.8.0_darwin_arm64.tar.gz"
+      sha256 "982d75c2a4e24e0871e4ba726067cf94e4a85c3ac5cfada1f4e0e3ad8373d03b"
 
       define_method(:install) do
         bin.install "dbridge"
@@ -29,15 +29,15 @@ class Dbridge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thalesfp/dbridge/releases/download/v0.7.0/dbridge_0.7.0_linux_amd64.tar.gz"
-      sha256 "43aa51c5e0d374d27f1c718b752d98d69487d9b90a249e315c1973185851ecfa"
+      url "https://github.com/thalesfp/dbridge/releases/download/v0.8.0/dbridge_0.8.0_linux_amd64.tar.gz"
+      sha256 "4d95529198e689ee9bf2297522331f1fbdc23afb3a15984b049678192068e3c7"
       define_method(:install) do
         bin.install "dbridge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thalesfp/dbridge/releases/download/v0.7.0/dbridge_0.7.0_linux_arm64.tar.gz"
-      sha256 "37d6e4a6c153d7176605c8344e080d509d678efd4aaf150c5d8edcbefb6d5978"
+      url "https://github.com/thalesfp/dbridge/releases/download/v0.8.0/dbridge_0.8.0_linux_arm64.tar.gz"
+      sha256 "c67088c7608cf19224f2703ec91cb698f4321edd0889f887c0bc2e3cc90e5afe"
       define_method(:install) do
         bin.install "dbridge"
       end
